@@ -1,0 +1,1 @@
+go build -o libgo_function.so -buildmode=c-shared goFunction.go

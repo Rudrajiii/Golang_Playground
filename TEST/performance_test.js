@@ -1,7 +1,7 @@
 const ffi = require('ffi-napi');
 const ref = require('ref-napi');
 
-// Load the shared library
+
 const lib = ffi.Library('./libgo_function.so', {
   'GoFunction': ['void', []]
 });
