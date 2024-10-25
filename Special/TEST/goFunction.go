@@ -1,5 +1,4 @@
 package main
-
 import "C"
 import (
 	"fmt"
@@ -15,4 +14,6 @@ func GoFunction() {
 	fmt.Println("Go sum:", sum) // Just to ensure the function isn't optimized out
 }
 
-func main() {}
+func main() {
+	fmt.Println()
+}
