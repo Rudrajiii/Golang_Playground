@@ -12,9 +12,10 @@ func main() {
 	}else {
 		fmt.Println("is kid")
 	}
-
-	if height := 185; height >= 175 {
+	if height := 105; height >= 175 {
 		fmt.Println("Tall Person")
+	}else{
+		fmt.Println("Is not tall")
 	}
 	// Go does not have ternary operator till now
 }

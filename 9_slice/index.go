@@ -9,25 +9,28 @@ import (
 //* most used construct in go
 //* useful methods
 func main(){
-	//* uninitialized slice in nil
-	var num[]int
+	//* uninitialized slice is nil
+	var num []int
 	fmt.Println(num)
 	fmt.Println(num == nil)
 	fmt.Println(len(num))
 
 	//* capacity -> maximum numbers of elements can fit
 	var nums = make([]int,2,5)
-	fmt.Println(cap(nums))
+	fmt.Println(cap(nums) , len(nums))
 	fmt.Println(nums)
 
 	nums[0] = 3
 	nums[1] = 4
 
+	fmt.Println(nums)
+
 	nums = append(nums, 1)
 	nums = append(nums, 2)
 	nums = append(nums, 3)
 	nums = append(nums, 4)
-	fmt.Println(cap(nums))
+	nums = append(nums, 4)
+	fmt.Println("My capacity is => ",cap(nums))
 	fmt.Println(nums)
 	fmt.Println(len(nums))
 
@@ -55,6 +58,14 @@ func main(){
 
 	D_2 := [][]int{{1,2},{2,3}}
 	fmt.Println(D_2)
+
+	v := make([]int , 10)
+	fmt.Println(v)
+
+	st := "seven"
+	byteArray := []byte(st)
+	byteArray[0] = 'n'
+	fmt.Println(byteArray)
 
 }
 

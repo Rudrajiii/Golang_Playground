@@ -20,4 +20,5 @@ slice:
 	else \
 		echo "Error: 9_slice/index.go does not exist."; \
 	fi
-
+map:    
+	@go run 10_map/index.go

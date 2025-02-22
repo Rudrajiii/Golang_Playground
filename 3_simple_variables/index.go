@@ -10,6 +10,9 @@ func main() {
 
 	name := "Rudra"
 	fmt.Println(name)
+	
+	var point float32 = 2.23
+	fmt.Println(point)
 
 	var age int = 18
 	fmt.Println(age)

@@ -1,6 +1,7 @@
 package main
 
 import "fmt"
+
 func main(){
 	//in go we have only for loop no while and other loops
 	//while loop using for
@@ -24,8 +25,6 @@ func main(){
 	for j := range []int{0, 1, 2} {
 		fmt.Println(j)
 	}
-	// for j := 3 {
-	// 	fmt.Println(j)
-	// }
+
 }
 
